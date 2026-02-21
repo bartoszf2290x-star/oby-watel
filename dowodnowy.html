@@ -112,13 +112,14 @@ body, html {
 
 
 #gradient {
-    position: absolute;          /* lub relative – przetestuj */
-    inset: 0;                    /* wypełnia cały rodzic */
+    position: absolute;
+    inset: 0;
     background: 
-        linear-gradient(rgba(245, 246, 251, 0.88), rgba(245, 246, 251, 0.88)),  /* jasne wybielenie */
-        url('2.png') repeat center / 380px auto;   /* rozmiar wzoru – zmień na 300-450px */
-    z-index: 1;                  /* pod tekstem i zdjęciem */
-    pointer-events: none;        /* nie blokuje klikania */
+        linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)),
+        url('2.png') repeat;
+    background-size: auto 100%, 420px 420px;   /* lub 350px auto */
+    z-index: 1;
+    pointer-events: none;
 }
 
 * {
