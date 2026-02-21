@@ -112,11 +112,13 @@ body, html {
 
 
 #gradient {
-  position: relative;
-  background: url('2.png') center / auto repeat;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
+    position: absolute;          /* lub relative – przetestuj */
+    inset: 0;                    /* wypełnia cały rodzic */
+    background: 
+        linear-gradient(rgba(245, 246, 251, 0.88), rgba(245, 246, 251, 0.88)),  /* jasne wybielenie */
+        url('2.png') repeat center / 380px auto;   /* rozmiar wzoru – zmień na 300-450px */
+    z-index: 1;                  /* pod tekstem i zdjęciem */
+    pointer-events: none;        /* nie blokuje klikania */
 }
 
 * {
